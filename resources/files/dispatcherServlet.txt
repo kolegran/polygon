@@ -1,0 +1,1 @@
+The DispatcherServlet class is the front controller of the framework and is responsible for delegating control to the various interfaces during the execution phases of an HTTP request.

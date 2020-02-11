@@ -1,0 +1,26 @@
+JSP Model 2 is a complex design pattern used in the design of Java Web applications which separates the display of content from the logic used to obtain and manipulate the content.
+Since Model 2 drives a separation between logic and display, it is usually associated with the model–view–controller (MVC) paradigm.
+While the exact form of the MVC "Model" was never specified by the Model 2 design, a number of publications recommend a formalized layer to contain MVC Model code.
+The Java BluePrints, for example, originally recommended using EJBs to encapsulate the MVC Model.
+
+In a Model 2 application, requests from the client browser are passed to the controller.
+The controller performs any logic necessary to obtain the correct content for display.
+It then places the content in the request (commonly in the form of a JavaBean or POJO) and decides which view it will pass the request to.
+The view then renders the content passed by the controller.
+
+Model 2 is recommended for medium- and large-sized applications.
+
+Misconceptions
+A common misconception is that a formalized MVC pattern is required to achieve a Model 2 implementation.
+However, the Java BluePrints specifically warn against this interpretation:
+
+The literature on Web-tier technology in the J2EE platform frequently uses the terms "Model 1" and "Model 2" without explanation.
+This terminology stems from early drafts of the JSP specification, which described two basic usage patterns for JSP pages.
+While the terms have disappeared from the specification document, they remain in common use.
+Model 1 and Model 2 simply refer to the absence or presence (respectively) of a controller servlet that dispatches requests from the client tier and selects views.
+
+Furthermore, the term "MVC2" has led many to a mistaken belief that Model 2 represents a next-generation MVC pattern.
+In fact, MVC2 is simply a shortening of the term "MVC Model 2".
+The confusion over the term "MVC2" has led to additional confusion over Model 1 code, resulting in common usage of the nonexistent term "MVC1".
+
+Details: https://en.wikipedia.org/wiki/JSP_model_2_architecture
