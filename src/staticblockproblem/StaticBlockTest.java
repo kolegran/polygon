@@ -1,6 +1,6 @@
 package staticblockproblem;
 
-public class Application {
+public class StaticBlockTest {
     public static void main(String[] args) {
         new User();
     }
